@@ -1,7 +1,7 @@
-FROM ghcr.io/greyltc/archlinux-aur
+FROM ghcr.io/greyltc/rust-wasm
 LABEL maintainer="Greyson Christoforo <grey@christoforo.net>"
 LABEL source="https://github.com/greyltc/some-docker-containers"
 
-# install rust-wasm
-ADD install-rust-wasm.sh /root
-RUN bash /root/install-rust-wasm.sh
+# install trunk
+ADD install-trunk.sh /root
+RUN bash /root/install-trunk.sh
