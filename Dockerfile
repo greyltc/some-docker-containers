@@ -1,5 +1,5 @@
 FROM ghcr.io/greyltc/archlinux-aur
-LABEL maintainer="Grey Christoforo <grey@christoforo.net>"
+LABEL maintainer="Greyson Christoforo <grey@christoforo.net>"
 LABEL source="https://github.com/greyltc/some-docker-containers"
 
 # install rust-wasm
