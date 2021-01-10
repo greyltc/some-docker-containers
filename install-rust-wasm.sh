@@ -11,4 +11,4 @@ sudo -u aurbuilder -D~ bash -c "yes | yay -Syu --removemake --needed --noprogres
 
 # clean cache
 sudo -u aurbuilder -D~ bash -c "yes | yay -Scc"
-
+sudo -u aurbuilder -D~ bash -c "rm -rf .cargo"
