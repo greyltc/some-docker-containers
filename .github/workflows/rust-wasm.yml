@@ -17,7 +17,7 @@ jobs:
         name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: ${{ env.THIS_BRANCH }}
+          ref: rust-wasm
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v1
