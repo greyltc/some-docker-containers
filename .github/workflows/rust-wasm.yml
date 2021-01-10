@@ -8,8 +8,8 @@ jobs:
     steps:
       - name: Get branch
         id: getbranch
-        run: echo "THIS_BRANCH=$(basename -s .yml {{ github.workflow }})" >> $GITHUB_ENV
-      
+        run: echo "THIS_BRANCH=$(basename -s .yml ${{ github.workflow }})" >> $GITHUB_ENV
+
       - name: Get current date
         id: date
         run: echo "TODAY=$(date +'%Y%m%d')" >> $GITHUB_ENV
