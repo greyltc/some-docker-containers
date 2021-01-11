@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron:  '0 4 ? * SUN'
+    - cron:  '0 10 ? * SUN'
   workflow_dispatch:
 jobs:
   multi-registries:
