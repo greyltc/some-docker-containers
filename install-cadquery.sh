@@ -7,7 +7,8 @@ set -o xtrace
 
 suffix=$1
 
-# install 
+# install
+sudo -u aurbuilder -D~ bash -c "yay -Syu --noconfirm --removemake --needed --noprogressbar python-joblib1"
 sudo -u aurbuilder -D~ bash -c "yay -Syu --noconfirm --removemake --needed --noprogressbar python-ocp${suffix}"
 sudo -u aurbuilder -D~ bash -c "yay -Syu --noconfirm --removemake --needed --noprogressbar python-cadquery${suffix}"
 
