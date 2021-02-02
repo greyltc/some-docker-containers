@@ -7,8 +7,8 @@ set -o xtrace
 
 # build and install rust with wasm32-unknown-unknown target
 pacman -Syu --noprogressbar --needed --noconfirm rust
-sudo -u aurbuilder -D~ bash -c "yes | yay -Syu --removemake --needed --noprogressbar rust-wasm"
+sudo -u ab -D~ bash -c "yes | yay -Syu --removemake --needed --noprogressbar rust-wasm"
 
 # clean cache
-sudo -u aurbuilder -D~ bash -c "yes | yay -Scc"
-sudo -u aurbuilder -D~ bash -c "rm -rf .cargo"
+sudo -u ab -D~ bash -c "yes | yay -Scc"
+sudo -u ab -D~ bash -c "rm -rf .cargo"
